@@ -17,6 +17,29 @@ public enum Continent {
     }
 
     public double getField() {
-        return field;
+        return this.field;
+    }
+
+    public static String calculateSmallestContinent() {
+        Continent smallest = AFRYKA;
+        Continent[] values = Continent.values();
+        for (int i = 0; i < values.length; i++) {
+            Continent continent = values[i];
+
+            if (continent.field < smallest.field) {
+                smallest = continent;
+            }
+        }
+        return smallest.name();
+    }
+
+    public static String calculateBiggestContinent() {
+        Continent biggest = AFRYKA;
+        for (Continent continent : Continent.values()) {
+            if (continent.field > biggest.field) {
+                biggest = continent;
+            }
+        }
+        return "The biggest continent is: " + biggest.name() + " with field of: " + biggest.getField() + "mln km";
     }
 }

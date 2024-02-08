@@ -2,7 +2,7 @@ package kontynenty_Oliwier;
 
 public enum Continent {
 
-    AFRYKA("Afryka",30.4),
+    AFRYKA("Afryka",30.4), // nie podajemy parametru name...zamiast tego uzyjemy metody name()
     AMERYKA_POLUDNIOWA("Ameryka Południowa",17.8),
     AMERYKA_POLNOCNA("Ameryka Północna",24.2),
     ANTARKTYDA("Antarktyda",13.2),

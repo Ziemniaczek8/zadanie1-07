@@ -11,15 +11,10 @@ W ramach enuma zdeklaruj wszystkie kontynenty oraz metody statyczne do:
 
     public static void main(String[] args) {
 
+        String smallestCon = kontynenty_Zadanie.Continent.calculateSmallestContinent();
+        String biggestCon = Continent.calculateBiggestContinent();
 
-
+        System.out.println(smallestCon);
+        System.out.println(biggestCon);
     }
-
-   /* public static void printBiggestContinent() {
-        Continent.values();
-
-        for (int i = 0; i < Continent.values().length; i++) {
-            if (Continent.values()[i].getField()
-        }
-    }*/
 }
